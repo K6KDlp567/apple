@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+    font-family:  apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.bar ul  {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    list-style: none;
+    border: 2px solid gray ;
+    background-color: rgba(22, 22, 23, 0.8);
+    backdrop-filter: blur(20px); 
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    max-width: 800px;          /* Empêche la barre de prendre tout l'écran */
+    margin: 20px auto;
+    
+}
+
+ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    border-radius: 9px;
+    padding: 8px 2px;
+    color: #ffffff; 
+    background-color: transparent; 
+    border: none; 
+    padding: 0;
+}
+
+.apple {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apple h1 {
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.apple h2 {
+    color: orange;
+    margin: 2px;
+}
+
+.service {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.savoir {
+    display: inline-block;
+    background-color: #0071e3;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.acheter {
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.acheter:hover{
+    text-decoration: underline;
+}
+
+.lien {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ .ecran{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding: 40px 0;
+ }
+
+
+
+ .iphone-chassis{
+    position: relative;
+    width: 340px;
+    height: 620px;
+   background: radial-gradient(circle at center,#2f74f2 0%, #807a7a 80%);
+    border: 10px solid #333;
+    border-radius: 50px;
+    box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.dynamic-island {
+    position: absolute;
+    top: 18px; /* Descendue légèrement pour flotter sous la fente */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.ios-status-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px; /* Augmenté légèrement pour s'aligner avec la Dynamic Island */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px 0 24px;
+    box-sizing: border-box;
+    z-index: 90;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ios-icons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.battery-text {
+    font-size: 10px;
+    opacity: 0.9;
+}
+
+.battery-icon {
+    width: 22px;
+    height: 11px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    padding: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.battery-icon::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 3px;
+    width: 2px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 1px 1px 0;
+}
+
+.battery-level {
+    width: 100%;
+    height: 100%;
+    background-color: #34c759;
+    border-radius: 1.5px;
+}
+
+ .iphone-screen-content {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 30%,#2f74f2 0%, #807a7a 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px 40px 20px;
+    box-sizing: border-box;
+ }
+
+ .lock-screen-info {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.huge-time {
+    font-size: 54px;
+    font-weight: 200;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.date-today {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 4px 0 0 0;
+    opacity: 0.8;
+}
+
+.screen-text {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.en-tete {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produit {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.apple-watch {
+   
+    height: 100%;
+    max-width: 400px;
+    border: 2px solid white;
+
+}
+
+.iphone14{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    
+
+}
+
+.airpods {
+   width: 100%;
+    height: 100%;
+    max-width: 400px;
+
+}
+
+.mac {
+    width: 100%;
+    height:100%;
+    max-width: 400px;
+    
+}
+
+.ipad {
+   width: 102%;
+   height: 100% ;
+   max-width: 400px;
+}
+
+/* Conteneur parent */
+.image-container {
+    position: relative; /* Devient la référence pour le h1 et le p */
+    overflow: hidden;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 12px; /* Optionnel : adoucit les angles du bloc */
+   
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); 
+    opacity: 1;           
+}
+
+/* 1. Prix positionné en haut à droite */
+.image-container .prix {
+    position: absolute;
+    top: 10px;
+    right:120px;
+    margin: 0;
+    color: #ffffff;         
+    font-size: 10px;  
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre pour faire ressortir le prix */
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
+    z-index: 10;          
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+}
+
+/* 2. Description positionnée en bas avec fond transparent */
+.image-container .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    font-size: 10px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    
+    /* Fond transparent gris/noir avec effet flou style Apple */
+    background-color: rgba(22, 22, 23, 0.65); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); /* Compatibilité Safari */
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+}
+
+.image-container:hover .prix {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.image-container:hover .description {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.image-container:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.accessoire img {
+    position: absolute;
+    height: auto;
+    z-index: 10;
+}
+
+.accessoire .boite {
+    perspective: 800px;
+    top: 161px;
+    left: 60px; 
+    width: 300px;
+    border: 2px solid white; 
+    border-radius: 20px;
+    transform: rotate(-42deg);
+}
+
+.accessoire .power-bank {
+    top: 636px;
+    left: 64px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.accessoire .chargeur {
+    top: 217px;
+    left: 810px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 300px;
+        transform: rotate(17deg)
+    
+}
+
+.accessoire .airpods {
+    top: 595px;
+    left: 800px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 300px;
+    
+}
+
+.accessoire .chargeur:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.accessoire .power-bank:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.accessoire .boite:hover {
+    opacity: 2;
+    transform: scale(1.1);
+}
+
+.accessoire .airpods:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.mac-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordinateur {
+   display: flex;
+   margin: 20px;
+}
+
+.mac1 {
+    width: 100%;
+    height:100%;
+    max-width: 400px;
+    
+}
+
+.mac2 {
+    width: 100%;
+    height:100%;
+    max-width: 400px;
+    
+}
+
+.mac3 {
+    width: 100%;
+    height:100%;
+    max-width: 400px;
+    
+}
+
+.mac4 {
+    width: 100%;
+    height:100%;
+    max-width: 400px;
+    
+}
+
+.market {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+
+
+.panier { 
+    position: relative;
+    width: 2%;
+    top: -75px;
+    left: -42px;
+    cursor: pointer;
+}
+
+.service-client {
+   position: relative;
+    width: 2%;
+    top: -75px;
+    left: -42px;
+    cursor: pointer;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel {
+    margin: 10px;
+}
+
+.macbook {
+    display: flex;
+    margin: 10px;
+}
+
+.iphone1 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.iphone2 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.iphone3 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.iphone4 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.iphone-apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel {
+    display: flex;
+    margin: 10px;
+}
+
+.iphone14 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.montre {
+    display: flex;
+}
+
+.market a {
+    left: -86px;
+    position: relative;
+    top: -55px;
+    font-size: 10px;
+}
